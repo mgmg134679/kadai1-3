@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const tasks = ["========================================", "現在持っているタスク一覧",
+      "========================================"];
+    tasks.forEach(element => console.log(element));
+    const skills = ["掃除", "買い物", "散歩"];
+    skills.forEach(function (elem, index) {
+      console.log(index + ': ' + elem);
+    });
+    while (true) {
+      const name = prompt("タスクを入力してください");
+      skills.push(name);
+      tasks.forEach(element => console.log(element));
+      skills.forEach(function (elem, index) {
+        console.log(index + ': ' + elem);
+      });
+      alert("新しいタスクを追加しました");
+      const name2 = prompt("確認、追加、削除、終了のいずれかを選びなさい");
+      break;
+    }
+  </script>
+</body>
+
+</html>
