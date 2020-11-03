@@ -16,7 +16,7 @@
     // ========================================
     //  現在持っているタスク一覧
     // ========================================
-    const skills = ["掃除", "買い物", "散歩"];
+    const skills = [`掃除`, `買い物`, `散歩`];
     skills.forEach(function (elem, index) {
       console.log(index + ': ' + elem);
     });
@@ -25,16 +25,16 @@
     // 2:散歩
 
     while (true) {
-      const name = prompt("タスクを入力してください");
+      const name = prompt(`タスクを入力してください`);
       // タスクを入力してください
       skills.push(name);
       console.log(tasks);
       skills.forEach(function (elem, index) {
         console.log(index + ': ' + elem);
       });
-      alert("新しいタスクを追加しました");
+      alert(`新しいタスクを追加しました`);
       // 新しいタスクを追加しました
-      const addselect = prompt("確認、追加、削除、終了のいずれかを選びなさい");
+      const addselect = prompt(`確認、追加、削除、終了のいずれかを選びなさい`);
       // 確認、追加、削除、終了のいずれかを選びなさい
       break;
     }
