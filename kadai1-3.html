@@ -9,22 +9,33 @@
 
 <body>
   <script>
-    const tasks = ["========================================", "現在持っているタスク一覧",
-      "========================================"];
-    tasks.forEach(element => console.log(element));
+    const tasks =`========================================
+現在持っているタスク一覧
+========================================`;
+    console.log(tasks);
+    // ========================================
+    //  現在持っているタスク一覧
+    // ========================================
     const skills = ["掃除", "買い物", "散歩"];
     skills.forEach(function (elem, index) {
       console.log(index + ': ' + elem);
     });
+    // 0:掃除
+    // 1:買い物
+    // 2:散歩
+
     while (true) {
       const name = prompt("タスクを入力してください");
+      // タスクを入力してください
       skills.push(name);
-      tasks.forEach(element => console.log(element));
+      console.log(tasks);
       skills.forEach(function (elem, index) {
         console.log(index + ': ' + elem);
       });
       alert("新しいタスクを追加しました");
-      const name2 = prompt("確認、追加、削除、終了のいずれかを選びなさい");
+      // 新しいタスクを追加しました
+      const addselect = prompt("確認、追加、削除、終了のいずれかを選びなさい");
+      // 確認、追加、削除、終了のいずれかを選びなさい
       break;
     }
   </script>
